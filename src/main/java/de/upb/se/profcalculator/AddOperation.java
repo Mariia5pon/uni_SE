@@ -9,10 +9,10 @@ public class AddOperation {
 	public String returnAStringRepresentionOfTheExpression() {
 		return l.toString() + " + " + r.toString();
 	}
-	public int evaluatetheexpressiontoanintegervalue() {
+	public int evaluateExpressionToIntegerValue() {
 		return l.getValue() + r.getValue();
 	}
 	public String computeEquationRepresentationAndValue() {
-		return returnAStringRepresentionOfTheExpression() + " = " + evaluatetheexpressiontoanintegervalue();
+		return returnAStringRepresentionOfTheExpression() + " = " + evaluateExpressionToIntegerValue();
 	}
 }

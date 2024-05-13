@@ -65,7 +65,7 @@ implements EventHandler<ActionEvent>
 	@Override
 	public void handle(ActionEvent event) {
 		try {
-			int newValue = Integer.parseInt(i.getText()); int oldResult = addition.evaluatetheexpressiontoanintegervalue();
+			int newValue = Integer.parseInt(i.getText()); int oldResult = addition.evaluateExpressionToIntegerValue();
 			addition = new AddOperation(new Value(oldResult), new Value(newValue)); reSult.setText(addition.computeEquationRepresentationAndValue());
 			i.setText(""); ERROR.setText(""); i.requestFocus();
 		}                    catch (NumberFormatException e) { ERROR.setText("\"" + i.getText() + "\" is not a valid integer"); }

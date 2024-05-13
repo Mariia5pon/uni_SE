@@ -20,9 +20,9 @@ implements EventHandler<ActionEvent>
 
 	{
 
-	private final static Value defaultValue = new Value(0);
+	private final static Value DEFAULT_VALUE = new Value(0);
 	
-	private AddOperation addition = new AddOperation(defaultValue, defaultValue);
+	private AddOperation addition = new AddOperation(DEFAULT_VALUE, DEFAULT_VALUE);
 
 	private Label ERROR = new Label("");
 	

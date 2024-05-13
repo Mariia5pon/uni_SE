@@ -1,8 +1,8 @@
 package de.upb.se.profcalculator;
 
 public class add {
-	public VALUE l, r;
-	public add(VALUE l, VALUE r) {
+	public Value l, r;
+	public add(Value l, Value r) {
 		this.l = l;
 		this.r = r;
 	}

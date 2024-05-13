@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class ProfCalculator
+public class ProfCalculatorApp
 
 extends Application
 
@@ -20,9 +20,9 @@ implements EventHandler<ActionEvent>
 
 	{
 
-	private final static VALUE defaultvalue = new VALUE(0);
+	private final static Value defaultValue = new Value(0);
 	
-	private add addition = new add(defaultvalue, defaultvalue);
+	private add addition = new add(defaultValue, defaultValue);
 
 	private Label ERROR = new Label("");
 	
@@ -66,7 +66,7 @@ implements EventHandler<ActionEvent>
 	public void handle(ActionEvent event) {
 		try {
 			int newValue = Integer.parseInt(i.getText()); int oldResult = addition.evaluatetheexpressiontoanintegervalue();
-			addition = new add(new VALUE(oldResult), new VALUE(newValue)); reSult.setText(addition.computeAnEquationRepresentingTheExpressionAndItsValue());
+			addition = new add(new Value(oldResult), new Value(newValue)); reSult.setText(addition.computeAnEquationRepresentingTheExpressionAndItsValue());
 			i.setText(""); ERROR.setText(""); i.requestFocus();
 		}                    catch (NumberFormatException e) { ERROR.setText("\"" + i.getText() + "\" is not a valid integer"); }
 	}

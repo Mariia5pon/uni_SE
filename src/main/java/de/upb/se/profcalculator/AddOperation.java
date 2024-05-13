@@ -12,7 +12,7 @@ public class AddOperation {
 	public int evaluatetheexpressiontoanintegervalue() {
 		return l.getValue() + r.getValue();
 	}
-	public String computeAnEquationRepresentingTheExpressionAndItsValue() {
+	public String computeEquationRepresentationAndValue() {
 		return returnAStringRepresentionOfTheExpression() + " = " + evaluatetheexpressiontoanintegervalue();
 	}
 }

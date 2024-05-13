@@ -30,7 +30,7 @@ implements EventHandler<ActionEvent>
 	
 	private Button a = new Button("+");
 	
-	private Label reSult = new Label(addition.computeAnEquationRepresentingTheExpressionAndItsValue());
+	private Label reSult = new Label(addition.computeEquationRepresentationAndValue());
 	
 	@Override
 	public void start(Stage stage) throws Exception {
@@ -66,7 +66,7 @@ implements EventHandler<ActionEvent>
 	public void handle(ActionEvent event) {
 		try {
 			int newValue = Integer.parseInt(i.getText()); int oldResult = addition.evaluatetheexpressiontoanintegervalue();
-			addition = new AddOperation(new Value(oldResult), new Value(newValue)); reSult.setText(addition.computeAnEquationRepresentingTheExpressionAndItsValue());
+			addition = new AddOperation(new Value(oldResult), new Value(newValue)); reSult.setText(addition.computeEquationRepresentationAndValue());
 			i.setText(""); ERROR.setText(""); i.requestFocus();
 		}                    catch (NumberFormatException e) { ERROR.setText("\"" + i.getText() + "\" is not a valid integer"); }
 	}
